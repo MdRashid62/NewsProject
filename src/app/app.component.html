@@ -3,14 +3,14 @@
       <mat-icon (click)="this.sideNav.open()"  *ngIf="!sideNav?.opened">menu</mat-icon>
       <mat-icon (click)="this.sideNav.close()" *ngIf="sideNav?.opened">close</mat-icon>
   </button>
-    <span>LP News</span>
+    <span>All The Latest News</span>
 </mat-toolbar>
 
 
 <mat-sidenav-container>
     <mat-sidenav #sidenav="matSidenav">
-        <img class="avatar mat-elavation-z8" src="https://cdn4.vectorstock.com/i/thumb-large/50/08/news-alerts-breaking-logo-tv-design-element-vector-24575008.jpg" alt="">
-        <h4 class="name">Let's Program</h4>
+        <img class="avatar mat-elavation-z8" src="/assets/news_alert.jpg" alt="">
+        <h4 class="name">News Sources</h4>
         <mat-divider></mat-divider>
 
         <ng-container *ngFor="let source of sources">
